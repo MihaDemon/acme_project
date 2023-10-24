@@ -40,3 +40,9 @@ class BirthdayForm(forms.ModelForm):
             raise ValidationError(
                 'Мы тоже любим Битлз, но введите, пожалуйста, настоящее имя!'
             )
+
+
+class CongratulationForm(forms.ModelForm):
+    class Meta:
+        model = models.Congratulation
+        fields = ('text',)
